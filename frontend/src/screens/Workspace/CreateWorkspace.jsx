@@ -30,7 +30,7 @@ const CreateWorkspace = () => {
 
       toast.success(data.messsage || "Workspace created successfully");
       
-      navigate(`/workspace/${data._id}/boards`);
+      navigate(`/workspaces`);
       
     } catch (error) {
         console.error(
