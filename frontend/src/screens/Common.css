@@ -1,0 +1,18 @@
+.home-page, .dashboard, .board{
+  width: 100%;
+  min-height: 100%;
+
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: minmax(500px, 1fr) 320px;
+
+  gap: 60px;
+
+  padding: 40px 50px;
+
+  box-sizing: border-box;
+
+  background-color: white;
+}
+

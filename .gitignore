@@ -1,0 +1,9 @@
+notes.txt
+.env.*
+!.env.example
+
+dist/
+build/
+
+.DS_Store
+node_modules/

@@ -1,0 +1,49 @@
+.workspace-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+
+  background: linear-gradient(
+    145deg,
+    #0d8055,
+    #45c995
+  );
+
+  color: #ffffff;
+
+  font-weight: 600;
+
+  flex-shrink: 0;
+}
+
+
+/* Sidebar */
+
+.workspace-avatar--small {
+  width: 32px;
+  height: 32px;
+
+  font-size: 16px;
+}
+
+
+/* Default */
+
+.workspace-avatar--medium {
+  width: 48px;
+  height: 48px;
+
+  font-size: 24px;
+}
+
+
+/* Boards page */
+
+.workspace-avatar--large {
+  width: 75px;
+  height: 75px;
+
+  font-size: 38px;
+}

@@ -1,0 +1,217 @@
+/* =========================
+   CREATE WORKSPACE PAGE
+========================= */
+
+.create-workspace-page {
+  width: 100%;
+  min-height: calc(100vh - 56px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 55px 30px;
+
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+
+  color: #172b4d;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.create-workspace-page h1 {
+  width: 100%;
+  max-width: 650px;
+
+  margin: 0 0 12px;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  color: #172b4d;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.create-workspace-page > p {
+  width: 100%;
+  max-width: 650px;
+
+  margin: 0 0 32px;
+
+  color: #5e6c84;
+
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.create-workspace-page form {
+  width: 100%;
+  max-width: 650px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.create-workspace-page form > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.create-workspace-page label {
+  color: #172b4d;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   INPUT + TEXTAREA
+========================= */
+
+.create-workspace-page input,
+.create-workspace-page textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 2px solid #dfe1e6;
+  border-radius: 5px;
+
+  background-color: #ffffff;
+
+  color: #172b4d;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  outline: none;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+
+/* Input */
+
+.create-workspace-page input {
+  height: 44px;
+
+  padding: 0 12px;
+}
+
+
+/* Textarea */
+
+.create-workspace-page textarea {
+  min-height: 120px;
+
+  padding: 12px;
+
+  resize: vertical;
+}
+
+
+/* Placeholder */
+
+.create-workspace-page input::placeholder,
+.create-workspace-page textarea::placeholder {
+  color: #8993a4;
+}
+
+
+/* Focus */
+
+.create-workspace-page input:focus,
+.create-workspace-page textarea:focus {
+  border-color: #0c66e4;
+
+  box-shadow: 0 0 0 1px #0c66e4;
+}
+
+
+/* =========================
+   CREATE BUTTON
+========================= */
+
+.create-workspace-page button {
+  align-self: flex-start;
+
+  height: 42px;
+
+  padding: 0 20px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #0c66e4;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background-color 0.15s ease;
+}
+
+
+.create-workspace-page button:hover {
+  background-color: #0055cc;
+}
+
+
+/* Disabled / Loading */
+
+.create-workspace-page button:disabled {
+  background-color: #a5adba;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+  .create-workspace-page {
+    padding: 35px 20px;
+  }
+
+  .create-workspace-page h1 {
+    font-size: 26px;
+  }
+
+}

@@ -1,0 +1,223 @@
+.navbar {
+  height: 53px;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 12px;
+
+
+  background-color: white;
+
+  gap: 8px;
+
+  box-sizing: border-box;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================
+   LEFT SECTION
+========================= */
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  flex-shrink: 0;
+}
+
+.layout-grid-button{
+  border: none;
+  background: transparent;
+  color: gray;
+}
+
+.layout-grid-button:hover{
+  background-color: #eae6e6b0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Trello logo */
+
+.navbar-logo {
+  border: none;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: grey;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+
+  padding: 8px 10px;
+
+  gap: 7px;
+
+  cursor: pointer;
+}
+
+.navbar-logo img{
+  height: 20px;
+  width: 20px;
+}
+
+.navbar-logo:hover{
+  background-color: #eae6e6b0;
+  border-radius: 4px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+.search-container {
+  position: relative;
+  display: inline-block;
+  width: 680px;
+  margin-left: 170px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%); 
+  pointer-events: none; 
+  color: #888;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 7px 7px 7px 40px; /* Extra left padding so text doesn't overlap icon */
+  border: 2px solid #b6b2b2;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-container input:hover{
+  background-color: #f8f1f1b0;
+  border: 2px solid rgb(31, 31, 233);
+  border-radius: 5px;
+}
+
+.search-container input:focus{
+  background-color: #f8f1f1b0;
+  border: 3px solid rgb(31, 31, 233);
+  border-radius: 5px;
+}
+
+
+
+/* =========================
+   RIGHT SECTION
+========================= */
+
+.navbar-right {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  flex-shrink: 0;
+}
+
+.navbar-right .icon-button{
+  border: none;
+  color: gray;
+  background: transparent;
+}
+
+
+/* Create */
+
+.create-button {
+  height: 36px;
+
+  padding: 0 14px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: rgb(112, 112, 225);
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.create-button:hover {
+  background: rgb(43, 85, 189);
+}
+
+.icon-button:hover{
+  background-color: #eae6e6b0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Profile */
+
+.profile-button {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid rgba(255, 255, 255, 0.8);
+
+  border-radius: 50%;
+
+  background: #dfe1e6;
+
+  color: #172b4d;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.profile-button:hover {
+  border-color: white;
+}
+
+@media (max-width: 1000px) {
+  .navbar-menu-button {
+    display: none;
+  }
+
+  .navbar-search {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar-menu-button {
+    display: none;
+  }
+
+  .navbar-search {
+    max-width: 320px;
+  }
+}
+

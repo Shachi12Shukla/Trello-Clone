@@ -1,0 +1,250 @@
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.home-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+
+.welcome-card {
+  width: 100%;
+  max-width: 790px;
+
+  border: 1px solid #d9dce2;
+  border-radius: 6px;
+
+  overflow: hidden;
+
+  background: white;
+
+  box-shadow: 0 1px 2px rgba(9, 30, 66, 0.15);
+}
+
+
+/* =========================================
+   ILLUSTRATION
+========================================= */
+
+.welcome-illustration {
+  width: 100%;
+  height: 195px;
+
+  overflow: hidden;
+}
+
+.welcome-illustration img {
+    width: 100%;
+    height:100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.welcome-content {
+  text-align: center;
+
+  padding: 22px 35px 40px;
+}
+
+
+.welcome-content h2 {
+  margin: 0 0 18px;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  color: #172b4d;
+}
+
+
+.welcome-content p {
+  max-width: 620px;
+
+  margin: 0 auto 25px;
+
+  font-size: 16px;
+  line-height: 1.55;
+
+  color: #172b4d;
+}
+
+
+/* =========================================
+   CREATE BUTTON
+========================================= */
+
+.create-workspace-button {
+  border: none;
+
+  background: #0c66e4;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  padding: 11px 17px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition: background 0.15s ease;
+}
+
+
+.create-workspace-button:hover {
+  background: #0055cc;
+}
+
+
+/* =========================================
+   RIGHT PANEL
+========================================= */
+
+.home-right {
+  padding-top: 8px;
+}
+
+
+.home-section {
+  margin-bottom: 45px;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 25px;
+}
+
+
+
+
+.clock-icon {
+  font-size: 20px;
+
+  color: #172b4d;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   RECENT BOARD
+========================================= */
+
+.recent-board {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  cursor: pointer;
+
+  padding: 5px 0;
+}
+
+
+.recent-board-color {
+  width: 50px;
+  height: 40px;
+
+  border-radius: 5px;
+
+  background: linear-gradient(
+    135deg,
+    #7654c7,
+    #d06ac1
+  );
+}
+
+
+.recent-board-info h4 {
+  margin: 0 0 3px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #172b4d;
+}
+
+
+.recent-board-info p {
+  margin: 0;
+
+  font-size: 14px;
+
+  color: #5e6c84;
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .home-page {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    padding: 30px;
+  }
+
+  .home-right {
+    max-width: 690px;
+
+    width: 100%;
+
+    margin: 0 auto;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .home-page {
+    padding: 20px 15px;
+  }
+
+  .welcome-content {
+    padding: 20px 20px 30px;
+  }
+
+  .welcome-content p {
+    font-size: 15px;
+  }
+
+  .illustration-board {
+    left: 50px;
+  }
+
+  .illustration-header {
+    left: 60px;
+  }
+
+  .illustration-card {
+    right: 40px;
+  }
+
+}
