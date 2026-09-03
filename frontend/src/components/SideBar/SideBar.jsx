@@ -1,4 +1,4 @@
-import "./Sidebar.css";
+import "./SideBar.css";
 import { NavLink, useNavigate } from "react-router";
 
 import {
@@ -10,8 +10,8 @@ import {
   LayoutDashboard
 } from "lucide-react";
 
-import Workspace_Avatar from "../Workspace_Avatar";
-import "../Workspace_Avatar.css";
+import Workspace_Avatar from "../Avatar_Workspace/Workspace_Avatar";
+import "../Avatar_Workspace/Workspace_Avatar.css";
 
 import { useState } from "react";
 import useWorkspaces from "../../Hooks/useWorkspaces"

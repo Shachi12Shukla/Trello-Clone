@@ -1,7 +1,7 @@
 import React from 'react'
 import useWorkspaces from "../../Hooks/useWorkspaces"
 import Recently_viewed from "../../components/Recently_viewed"
-import Workspace_Avatar from "../../components/Workspace_Avatar"
+import Workspace_Avatar from "../../components/Avatar_Workspace/Workspace_Avatar"
 import { useNavigate } from "react-router";
 import "./Dashboard.css"
 import "../Common.css";

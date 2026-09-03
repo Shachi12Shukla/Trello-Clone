@@ -1,5 +1,5 @@
 import "./Board.css";
-import Workspace_Avatar from "../../components/Workspace_Avatar";
+import Workspace_Avatar from "../../components/Avatar_Workspace/Workspace_Avatar";
 // import "../../components/Workspace_Avatar.css"
 import {UserRound} from "lucide-react";
 import { useNavigate, useParams} from "react-router";

@@ -1,6 +1,6 @@
 import { useState, useEffect, use } from "react";
 import "./Members.css";
-import InviteMemberModal from "../../components/InviteMemberModal.jsx"
+import InviteMemberModal from "../../components/InviteMember/InviteMemberModal.jsx"
 import { useParams } from "react-router";
 import { getMembers, removeMembers, addMemberToWorkspace } from "../../services/WorkspaceService.js";
 import {useAuth} from "../../context/Auth_Context.jsx"
