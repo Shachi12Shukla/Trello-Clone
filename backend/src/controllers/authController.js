@@ -13,16 +13,16 @@ const signup = async (req, res) => {
 
     try {
 
-        const validationResult = signupSchema.safeParse(req.body);
+        const {data, success, error} = signupSchema.safeParse(req.body);
+       
+        if (!success) {
 
-        if (!validationResult.success) {
             return res.status(400).json({
-                message: "Invalid input",
-                errors: validationResult.error.issues
+                backend_message: error.issues.map((issue) => issue.message)  // zod validation
             });
         }
 
-        const { username, password } = validationResult.data;
+        const { username, password } = data;
 
         const existingUser = await userModel.findOne({ username });
 
@@ -62,16 +62,15 @@ const signin = async (req, res) => {
 
     try {
 
-        const validationResult = signinSchema.safeParse(req.body);
+        const {data, success, error} = signinSchema.safeParse(req.body);
 
-        if (!validationResult.success) {
+        if (!success) {
             return res.status(400).json({
-                message: "Invalid input",
-                errors: validationResult.error.issues
+                backend_message: error.issues.map( (issue) => issue.message )  // zod validation
             });
         }
 
-        const { username, password } = validationResult.data;
+        const { username, password } = data;
 
         const user = await userModel.findOne({ username });
 
