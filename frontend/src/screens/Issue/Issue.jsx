@@ -16,9 +16,6 @@ const Issue = () => {
 
     const currentUserId = userData?._id;
 
-    console.log("USER DATA:", userData);
-    console.log("CURRENT USER ID:", currentUserId);
-
     const { workspaceId, boardId } = useParams();
 
     const [board, setBoard] = useState(null);
@@ -64,30 +61,22 @@ const Issue = () => {
 
         if (!boardId) return;
 
-
         const fetchIssues = async () => {
 
             try {
 
                 setLoading(true);
 
-
                 const data = await getIssues(boardId);
-
-
-                console.log("Issue page data:", data);
-
 
                 // Board information
                 setBoard(data.board);
 
-
                 // Workspace information
                 setWorkspace(data.workspace);
 
-
                 // Issues
-                setIssues(data.issues || []);
+                setIssues(data.issues || []);    
 
             }
 
@@ -117,7 +106,6 @@ const Issue = () => {
 
         };
 
-
         fetchIssues();
 
     }, [boardId]);
@@ -145,10 +133,10 @@ const Issue = () => {
                     trimmedTitle
                 );
 
-            console.log(
-                "Updated issue:",
-                data
-            );
+            // console.log(
+            //     "Updated issue:",
+            //     data
+            // );
 
 
             setIssues((currentIssues) =>
@@ -266,15 +254,9 @@ const Issue = () => {
 
         return (
 
-            <div className="issue-screen">
+            <div className="issue-loading">
 
-                <main className="issue-board">
-
-                    <div className="issue-loading">
-                        Loading issues...
-                    </div>
-
-                </main>
+                Loading issues
 
             </div>
 
@@ -415,10 +397,10 @@ const Issue = () => {
                                                     newIssueState
                                                 );
 
-                                            console.log(
-                                                "Created issue:",
-                                                data
-                                            );
+                                            // console.log(
+                                            //     "Created issue:",
+                                            //     data
+                                            // );
 
 
                                             setIssues(
@@ -650,7 +632,6 @@ const Issue = () => {
                 </section>
 
             </main>
-
 
         </div>
 

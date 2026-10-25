@@ -28,10 +28,11 @@ const Signin = () => {
     }
     catch(error){
       console.error(error);
+      const backend_response = error.response?.data?.backend_message;
 
       toast.error(
-        error.response?.data?.message ||
-        "Invalid username or password"
+        Array.isArray(backend_response) ? backend_response.join("\n") : backend_response || 
+          "something went wrong"
       );
     }
 

@@ -10,6 +10,15 @@
 	padding-top: 20px;
 }
 
+.issue-loading{
+	color: purple;
+	font-size: x-large;
+	margin-top: 300px;
+	margin-bottom: 300px;
+	margin-left: 650px;
+	margin-right: 400px;
+}
+
 .issue-sidebar {
 	padding: 18px 16px;
 	background: #dbe9fb;

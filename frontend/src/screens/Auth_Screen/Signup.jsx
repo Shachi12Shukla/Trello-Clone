@@ -18,21 +18,17 @@ const Signup = () => {
     try{
       const data = await signupUser({username, password});
 
-
       toast.success("created account successfully");
       navigate("/signin");
     }
 
     catch(error){
       console.error(error);
+      const backend_response = error.response?.data?.backend_message;
 
-      toast.error(
-        error.response?.data?.message ||
-        "Something went wrong"
-      );
+      toast.error( Array.isArray(backend_response) ? backend_response.join("\n") : 
+          backend_response  || "Something went wrong");
     }
-    
-
   }
 
   return (
