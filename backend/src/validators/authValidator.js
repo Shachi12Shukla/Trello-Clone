@@ -23,7 +23,7 @@ const signinSchema = z.object({
 
     password: z
         .string()
-        .min(6, "Password is required")
+        .min(6, "Password must be minimum 6 character long")
 });
 
 module.exports = {
